@@ -5,15 +5,15 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
-
+  contributors: false,
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "demo软件园",
+    url: "https://www.demosoftware.cn",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "zjlala/zjlala.github.io",
 
   docsDir: "src",
 
@@ -29,7 +29,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "微信公众号:demo软件园",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
@@ -79,11 +79,10 @@ export default hopeTheme({
       },
     },
   },
-
   // 多语言配置
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
-  },
+  // metaLocales: {
+  //   editLink: "在 GitHub 上编辑此页",
+  // },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,

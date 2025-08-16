@@ -1,0 +1,22 @@
+<template><div><h1 id="爬虫概念" tabindex="-1"><a class="header-anchor" href="#爬虫概念"><span>爬虫概念</span></a></h1>
+<!-- more -->
+<h2 id="爬虫概述" tabindex="-1"><a class="header-anchor" href="#爬虫概述"><span>爬虫概述</span></a></h2>
+<h3 id="什么是爬虫" tabindex="-1"><a class="header-anchor" href="#什么是爬虫"><span>什么是爬虫</span></a></h3>
+<p>爬虫就是通过编写程序来爬取互联网上的优秀资源(图片, 音频, 视频, 数据)</p>
+<h2 id="爬虫hello-world" tabindex="-1"><a class="header-anchor" href="#爬虫hello-world"><span>爬虫hello world</span></a></h2>
+<p>谈到爬虫一般都会使用python，因为简单，支持爬虫的第三方库；所以第一个爬虫的案例也是基于python的:</p>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-python"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">from</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> urllib.request </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> urlopen</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">url </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "http://www.baidu.com"</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">response </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#383A42;--shiki-dark:#61AFEF"> urlopen</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(url)</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">result </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> response.</span><span style="--shiki-light:#383A42;--shiki-dark:#61AFEF">read</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">().</span><span style="--shiki-light:#383A42;--shiki-dark:#61AFEF">decode</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'utf-8'</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">print</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(result)</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">//</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> 输出的结果是一段访问baidu返回的html</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://origin.picgo.net/2025/08/14/180ab92d90c1e9a6a.png" alt="返回结果" tabindex="0" loading="lazy"><figcaption>返回结果</figcaption></figure>
+<h2 id="web请求全过程" tabindex="-1"><a class="header-anchor" href="#web请求全过程"><span>web请求全过程</span></a></h2>
+<p>做爬虫开发中，重要的一点是要熟悉一个web请求的全过程，这里只对过程做个整体上的讲解，够爬虫开始使用即可<br>
+请求的模型大概有两种，一种是服务器返回静态页面的请求响应，另一种是动静分离的请求响应<br>
+<img src="https://pic.demosoftware.cn/crawler/2.png" alt="请求响应模型" loading="lazy"></p>
+<h2 id="http协议" tabindex="-1"><a class="header-anchor" href="#http协议"><span>http协议</span></a></h2>
+</div></template>
+
+
